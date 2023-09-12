@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <p class="bg-water p-x-1 p-y-1">20% de descuento en todos los productos!</p>
+        <h1 class="bg-blue d-flex p-x-1 p-y-1 text-white"><a href="./index.html"><img src="./img/logo.png" alt="logo"/></a>Nombre Tienda</h1>
+        <nav class="bg-blue-dark p-x-1 p-y-1">
+            <ul class="d-flex " type="none">
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Registrarme</a></li>
+                <li><a href="">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="d-flex">
+        <div class="formulario bg-blue p-y-1 text-white">
+            <h2>Añadí tu super</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form action="" >
+                <div class="d-flex">
+                    <div class="columna d-flex" >
+                        <fieldset>
+                            <label for="name">*Nombre</label>
+                            <input type="text" id="name">  
+                        </fieldset>
+                        <fieldset>
+                            <label for="date">Fecha</label>
+                            <input type="date" id="date">  
+                        </fieldset>
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+                    </div>
+                    <div >
+                        <fieldset>
+                            <label for="specie">*Especie</label>
+                            <select id="specie">
+                                <option value="">Especie</option>
+                                <option value="">Especie1</option>
+                                <option value="">Especie2</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="photo">Agregar Foto</label>
+                            <input type="file" accept="image/png" name="photo" id="photo">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Poderes</legend>
+                            <input type="checkbox" name="fly" id="fly">
+                            <label for="fly">Volar</label>
+                            <input type="checkbox" name="inteligent" id="inteligent">
+                            <label for="inteligent">Superinteligencia</label>
+                            <input type="checkbox" name="vista" id="vista">
+                            <label for="vista">Vista de rayo láser</label>
+                            <input type="checkbox" name="money" id="money">
+                            <label for="money">Billetera gorda</label>
+
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <legend>Tipo de personaje</legend>
+                            <input type="radio" name="hero" id="hero">
+                            <label for="hero">Héroe / Heroína</label>
+                            <input type="radio" name="villan" id="villan">
+                            <label for="villan">Villano / Villana</label>
+                        </fieldset>
+                    </div>                    
+                </div>
+
+                <button type="submit" class="bg-water">Añadir</button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-blue text-center p-y-1 text-white">
+        <p >Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
